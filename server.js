@@ -7,8 +7,8 @@ mongoose.set('strictQuery', true);
 mongoose
   .connect(DB_HOST)
   .then(() => {
-    app.listen(PORT || 3001, () => {
-      console.log(`Server running. http://localhost:${PORT}`);
+    app.listen(PORT || 4444, () => {
+      console.log(`Server running. localhost:${PORT}`);
     });
     console.log('Database connect success');
   })
